@@ -1,0 +1,10 @@
+﻿@model HomeViewModel
+
+<partial name="_Carousel" />
+
+<div class="row">
+    @foreach(var pie in Model.PiesOfTheWeek)
+    {
+        <partial name="_PieCard" model="pie"/>
+    }
+</div>
